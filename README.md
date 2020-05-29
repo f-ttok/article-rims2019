@@ -15,7 +15,7 @@
 
 - 著者の環境:
     - プログラミング言語: Julia 1.4.1
-        - 必要なパッケージとして
+        - パッケージ (Arpack.jl, MatrixMarket, QuadGK.jl) が必要
     - OS: Linux (Ubuntu)
     - CPU: Intel(R) Core(TM) i7-4770 CPU @ 3.40GHz
     - メモリ: 16GB
@@ -24,9 +24,9 @@
     - 実行方法:
         1. 必要なパッケージをインストールする: 
             - 端末で`julia`と打ってJuliaを起動
-            - `import Pkg; Pkg.add(["MatrixMarket", "QuadGK"])`
+            - `import Pkg; Pkg.add(["Arpack.jl", "MatrixMarket", "QuadGK"])`
             - juliaを閉じる: `exit()`
         2. 実行する（端末で`julia test.jl`）
-    - 著者が実行したときの実行結果は`2020-03-22_Julia_数値実験結果.ipynb`に示す．
+    - 著者が実行したときの実行結果は`src/2020-03-22_Julia_数値実験結果.ipynb`に示す．
 
-- 2節の数値計算もJuliaを用いて行なった．ソースコードと結果は`2020-01-16_Julia_収束速度の計算.ipynb`に示す．
+- 2節の数値計算もJuliaを用いて行なった．ソースコードと結果は`src/2020-01-16_Julia_収束速度の計算.ipynb`に示す．
