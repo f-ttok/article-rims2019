@@ -1,0 +1,54 @@
+% !TEX root = 20191106-Tatsuoka.tex
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{amsthm}
+
+\usepackage[T1]{fontenc}
+\usepackage[uplatex,deluxe]{otf}
+\usepackage[haranoaji]{pxchfon}
+\usepackage{lmodern}
+\usepackage{helvet}
+\usepackage{bm}
+
+\usepackage{thmtools}
+\declaretheoremstyle[%
+  headfont=\bfseries\sffamily,
+]{sansserif}
+\declaretheorem[name=定理, style=sansserif]{theorem}
+\declaretheorem[name=定義, style=sansserif, sharenumber=theorem]{definition}
+\declaretheorem[name=命題, style=sansserif, sharenumber=theorem]{proposition}
+\declaretheorem[name=補題, style=sansserif, sharenumber=theorem]{lemma}
+\declaretheorem[name=系, style=sansserif, sharenumber=theorem]{corollary}
+\declaretheoremstyle[
+  headfont=\bfseries\sffamily, 
+]{sanserifproof}
+\let\proof\relax
+\declaretheorem[name={証明}, style=sanserifproof, unnumbered]{proof}
+% \newtheoremstyle{sansserif}{}{}{}{}{\sffamily}{.}{ }{}
+% \theoremstyle{sansserif}
+% \newtheorem{theorem}{定理}
+% \newtheorem{definition}[theorem]{定義}
+% \newtheorem{proposition}[theorem]{命題}
+% \newtheorem{lemma}[theorem]{補題}
+% \newtheorem{corollary}[theorem]{系}
+% \renewcommand{\proofname}{{\sffamily 証明}}
+% \renewcommand{\qedsymbol}{$\blacksquare$}
+
+
+\usepackage{mathtools}
+\mathtoolsset{showonlyrefs=true}
+\usepackage{geometry}
+\geometry{truedimen,a4paper,hmargin=15mm,vmargin=20mm}
+\usepackage{graphicx}
+\usepackage{algorithm,algpseudocode}
+\usepackage{hyperref}
+\hypersetup{
+  hidelinks=true,
+  pdftitle={行列対数関数のための二重指数関数型公式の収束率について},
+  pdfauthor={立岡文理，曽我部知広，剱持智哉，張紹良},
+}
+\special{dvipdfmx:config g 1.1}
+\usepackage{pxjahyper}
+\usepackage{titlesec}
+\titleformat{\section}{\Large\sffamily\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\large\sffamily\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalsize\sffamily\bfseries}{\thesubsubsection}{1em}{}
